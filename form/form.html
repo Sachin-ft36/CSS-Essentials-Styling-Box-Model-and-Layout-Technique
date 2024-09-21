@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "Roboto";
+        }
+        body{
+            background: radial-gradient(circle, white, red);
+        }
+        h1{
+            text-align: center;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            width: 25%;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: rgb(243, 242, 242);
+            
+        
+        }
+        #cars{
+            display: block;
+            margin-bottom: 10px;
+        }
+        input{
+            display: block;
+           
+            
+        }
+        label[for="rating"]{
+            display: block;
+        }
+        label{
+            font-weight: 600;
+            font-size: 19px;
+        }
+        #radio{
+            display: inline-block;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        input[type="checkbox"]{
+            display: inline-block;
+        }
+        .input{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 17px;
+            box-sizing: border-box; 
+            border: 1px solid rgb(220, 216, 216);
+        }
+        .btn{
+            padding: 14px;
+            font-size: 18px;
+            width: 20%;
+            align-items: center;
+            margin: 0 auto;
+            background-color: rgb(24, 190, 24);
+            border-radius: 7px;
+            border: none;
+            color: white;
+        }
+        input[type="text"]{
+            height: 100px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="" id="form">
+        <div>
+            <label for="">Feedback Type</label> 
+            <select class="input" name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <input class="input" type="text"  name="" id="">
+        </div>
+        <div>
+            <label for="rating">Website Rating:</label>
+            <input type="radio" name="" id="radio"> <label for="">Excellent</label>
+            <input type="radio" name="" id="radio"> <label for="">Good</label>
+            <input type="radio" name="" id="radio"><label for="">Average</label>
+            <input type="radio" name="" id="radio"><label for="Poor">Poor</label>
+        </div>
+        <div>
+            <label for="">Age (10-100):</label>
+            <input class="input" type="number" min="10" max="100" name="" id="">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input class="input" type="email" name="" id="">
+        </div>
+        <div>
+            <label for="password">Password(min. 8 characters):</label>
+            <input class="input" type="password" min="8" name="" id="">
+        </div>
+        <div>
+            <label for="URL">Website URL(optional):</label>
+            <input class="input" type="url" name="" id="">
+        </div>
+        <div>
+            <input type="checkbox" name="" id=""><label for="">We agree to the terms and conditions</label>
+        </div>
+        <button class="btn">Submit</button>
+        
+        
+
+    </form>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</body>
+</html>
